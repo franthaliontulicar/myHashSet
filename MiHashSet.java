@@ -56,4 +56,9 @@ public class MiHashSet
         }
         return contiene;
     }
+    
+     public boolean isEmpty()
+    {
+        return enteros.length == 0;
+    }
 }
