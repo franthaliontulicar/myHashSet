@@ -90,4 +90,8 @@ public class MiHashSet
     {
         return enteros.length;
     }
+    
+    public String toString(){
+        return enteros.length+"";
+    }
 }
