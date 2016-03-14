@@ -13,4 +13,6 @@ comment4.params=
 comment4.target=boolean\ isEmpty()
 comment5.params=elemento
 comment5.target=int\ remove(int)
-numComments=6
+comment6.params=
+comment6.target=int\ size()
+numComments=7

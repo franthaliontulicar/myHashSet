@@ -85,4 +85,9 @@ public class MiHashSet
         }
         return borrado;
     }
+    
+    public int size()
+    {
+        return enteros.length;
+    }
 }
