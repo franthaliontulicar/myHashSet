@@ -70,5 +70,13 @@ public class MiHashSet
     
     public boolean equals(MiHashSet otroConjunto){
         boolean iguales = false;
+        int index = 0;
+            if(enteros.contains(index) == otroConjunto.contains(index)){
+                iguales = true;
+            }
+            else{
+                iguales = false;
+            }
+        return iguales;
     }
 }
