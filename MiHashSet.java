@@ -61,4 +61,28 @@ public class MiHashSet
     {
         return enteros.length == 0;
     }
+    
+     public int remove(int elemento)
+    {
+        int borrado = -1;
+        if (elemento <= enteros.length && elemento >= 0)
+        {
+            int[] local;
+            local = enteros;
+            enteros = new int[local.length - 1];
+            for (int cont = 0; cont < enteros.length;cont++)
+            {
+                if (cont < elemento)
+                {
+                   enteros[cont] = local[cont];
+                }
+                else
+                {
+                    enteros[cont] = local[cont+1];
+                }
+            }
+            borrado = local[elemento];
+        }
+        return borrado;
+    }
 }
