@@ -37,63 +37,8 @@ public class MiHashSet
         enteros[local.length] = valor;
     }
     
-     public void clear()
+    public void clear()
     {
         enteros = new int[0];
-    }
-    
-     public boolean contains(int elemento)
-    {
-        boolean contiene = false;
-        int cont = 0;
-        while(cont < enteros.length && !contiene)
-        {
-             if (enteros[cont] == elemento)
-             {
-                 contiene = true;
-             }
-             cont++;
-        }
-        return contiene;
-    }
-    
-     public boolean isEmpty()
-    {
-        return enteros.length == 0;
-    }
-    
-     public int remove(int elemento)
-    {
-        int borrado = -1;
-        if (elemento <= enteros.length && elemento >= 0)
-        {
-            int[] local;
-            local = enteros;
-            enteros = new int[local.length - 1];
-            for (int cont = 0; cont < enteros.length;cont++)
-            {
-                if (cont < elemento)
-                {
-                   enteros[cont] = local[cont];
-                }
-                else
-                {
-                    enteros[cont] = local[cont+1];
-                }
-            }
-            borrado = local[elemento];
-        }
-        return borrado;
-    }
-    
-    public int size()
-    {
-        return enteros.length;
-    }
-    
-    public String toString(){
-     String cadena ="";
-        
-     return cadena;
     }
 }
