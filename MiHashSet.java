@@ -41,4 +41,19 @@ public class MiHashSet
     {
         enteros = new int[0];
     }
+    
+     public boolean contains(int elemento)
+    {
+        boolean contiene = false;
+        int cont = 0;
+        while(cont < enteros.length && !contiene)
+        {
+             if (enteros[cont] == elemento)
+             {
+                 contiene = true;
+             }
+             cont++;
+        }
+        return contiene;
+    }
 }
